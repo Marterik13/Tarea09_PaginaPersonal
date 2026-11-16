@@ -1,0 +1,352 @@
+/* ================= MEDIA QUERY PARA IPAD / TABLET (481px - 900px) ================= */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+
+    /* 1. HEADER COMPACTO */
+    .nav-contenedor {
+        padding-bottom: 12px;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 62px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .menu a i {
+        font-size: 20px;
+    }
+
+    .barra-nav {
+        width: 38px;
+    }
+
+    .btn-iniciar {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    .btn-iniciar i {
+        font-size: 20px;
+    }
+
+    /* 2. HERO / PRESENTACIÓN */
+    .hero-overlay {
+        padding: 45px 0;
+    }
+
+    .tarjeta-presentacion {
+        max-width: 92%;
+        padding: 30px 32px;
+        gap: 25px;
+        border-left: 8px solid var(--crema);
+    }
+
+    .texto-presentacion h1 {
+        font-size: 22px;
+    }
+
+    .texto-presentacion h1 span {
+        margin-left: 65px;
+        margin-top: -26px;
+    }
+
+    .texto-presentacion p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .foto-presentacion figure {
+        width: 165px;
+        height: 195px;
+    }
+
+    /* 3. BARRA SOCIAL */
+    .barra-social {
+        padding: 30px 0 38px;
+    }
+
+    .barra-social h2 {
+        margin-left: 5%;
+        font-size: 21px;
+    }
+
+    .caja-redes {
+        max-width: 90%;
+        padding: 14px 25px;
+    }
+
+    .caja-redes a {
+        font-size: 42px;
+    }
+
+    /* 4. SKILLS (Tarjetas limpias de 4 columnas) */
+    .skills-overlay {
+        padding: 45px 0;
+    }
+
+    .titulo-caja-azul {
+        padding: 10px 50px;
+        margin-bottom: 35px;
+    }
+
+    .grid-skills {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px 35px;
+        max-width: 580px;
+    }
+
+    .skill-item {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 105px;
+        height: 105px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 53, 122, 0.08);
+    }
+
+    .skill-item i {
+        font-size: 62px;
+    }
+
+    .grid-skills .skill-item:last-child {
+        grid-column: 2 / 4;
+        justify-self: center;
+    }
+
+    /* 5. MIS PROYECTOS (2 columnas arriba + 1 centrada abajo) */
+    .proyectos {
+        padding: 45px 0 60px;
+    }
+
+    .linea-crema {
+        max-width: 90%;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 30px;
+        max-width: 680px;
+    }
+
+    .card-proyecto {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .preview-proyecto {
+        height: 200px;
+    }
+
+    .grid-proyectos .card-proyecto:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 325px;
+        width: 100%;
+        justify-self: center;
+    }
+
+    /* 6. PONTE EN CONTACTO */
+    .contacto-overlay {
+        padding: 50px 0;
+    }
+
+    .grid-contacto {
+        grid-template-columns: 0.85fr 1.3fr;
+        gap: 30px;
+        max-width: 92%;
+    }
+
+    .fotos-contacto {
+        gap: 50px;
+    }
+
+    .img-redondeada {
+        width: 165px;
+        height: 145px;
+    }
+
+    .formulario-contenedor {
+        background-color: rgba(26, 32, 44, 0.45);
+        backdrop-filter: blur(6px);
+        padding: 28px 25px;
+        border-radius: 16px;
+    }
+
+    .formulario-contenedor h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    /* 7. SOBRE MÍ */
+    .sobre-mi {
+        padding: 55px 0;
+    }
+
+    .contenedor-sobre-mi {
+        max-width: 92%;
+    }
+
+    .bloque-azul-superior {
+        height: 195px;
+        padding: 30px 35px;
+    }
+
+    .bloque-crema-inferior {
+        margin: -60px 20px 0 20px;
+        padding: 25px 28px 40px;
+    }
+
+    .contenido-sobre-mi {
+        grid-template-columns: 1fr 1.15fr;
+        gap: 20px;
+    }
+
+    .foto-sobre-1 {
+        width: 155px;
+        height: 215px;
+        margin-top: -95px;
+    }
+
+    .foto-sobre-2 {
+        width: 160px;
+        height: 175px;
+        margin-top: 55px;
+        margin-left: 75px;
+    }
+
+    .etiqueta-conoceme {
+        font-size: 20px;
+        padding: 5px 24px;
+        margin-top: -42px;
+        margin-bottom: 28px;
+    }
+
+    .frase-sobre {
+        font-size: 19px;
+        margin-bottom: 85px;
+        margin-left: 15px;
+    }
+
+    /* 8. FRASE MOTIVACIONAL */
+    .banner-frase {
+        padding: 38px 20px;
+    }
+
+    .banner-frase blockquote {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    /* 9. FORMACIÓN ACADÉMICA*/
+    .formacion {
+        padding: 50px 0;
+    }
+
+    .marco-formacion {
+        max-width: 92%;
+        border-left: 10px solid var(--azul-oscuro);
+        border-right: 10px solid var(--azul-oscuro);
+        padding: 0 28px;
+    }
+
+    .titulo-formacion {
+        max-width: 480px;
+        margin: 25px auto 35px;
+    }
+
+    .grid-formacion {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 24px;
+        margin-bottom: 35px;
+    }
+
+    .item-edu {
+        background-color: var(--gris-fondo);
+        border-top: 5px solid var(--azul-oscuro);
+        border-radius: 12px;
+        padding: 22px 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .item-edu img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 12px;
+    }
+
+    .item-edu h3,
+    .item-edu p {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* 10. EXPERIENCIA LABORAL */
+    .exp-zona-superior {
+        padding: 45px 0 60px;
+    }
+
+    .exp-contenedor,
+    .exp-contenedor-inf {
+        max-width: 92%;
+    }
+
+    .titulo-exp {
+        padding: 12px 35px;
+        margin-bottom: 40px;
+    }
+
+    .fila-exp {
+        gap: 22px;
+        margin-bottom: 42px;
+    }
+
+    .foto-exp {
+        width: 135px;
+        height: 165px;
+    }
+
+    .tarjeta-blanca-exp {
+        padding: 22px 26px;
+        max-width: 390px;
+        border-radius: 10px;
+    }
+
+    .exp-zona-inferior {
+        padding: 65px 0 90px;
+    }
+
+    .triangulo-decorativo {
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 110px solid rgba(143, 169, 205, 0.55);
+        right: 10px;
+    }
+
+    .circulo-decorativo {
+        width: 190px;
+        height: 140px;
+        left: 10px;
+    }
+
+    /* 11. FOOTER */
+    .grid-footer {
+        grid-template-columns: 1fr 1.4fr 1.1fr;
+        gap: 15px;
+    }
+
+    .logo-footer img {
+        height: 65px;
+    }
+
+    .contacto-footer p {
+        font-size: 11.5px;
+    }
+}

@@ -1,0 +1,588 @@
+/* ================= MEDIA QUERY PARA MOBILE (180px - 480px) ================= */
+@media screen and (min-width: 180px) and (max-width: 480px) {
+
+    /* 1. HEADER & MENÚ SÁNDWICH (Oculta Iniciar Proyecto y despliega en columna) */
+    .cta-header,
+    .btn-iniciar {
+        display: none !important;
+    }
+
+    .nav-contenedor {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .btn-sandwich {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        color: var(--texto-oscuro);
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        padding-top: 15px;
+        margin-top: 8px;
+        border-top: 1px solid rgba(0, 53, 122, 0.15);
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        background-color: var(--blanco);
+        border-radius: 8px;
+        font-size: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .menu a i {
+        font-size: 18px;
+    }
+
+    .menu a:hover {
+        background-color: var(--azul-oscuro);
+        color: var(--crema);
+        transform: none;
+    }
+
+    .menu a:hover i {
+        color: var(--crema);
+    }
+
+    .barra-nav {
+        display: none;
+    }
+
+    /* 2. HERO / PRESENTACIÓN (Imagen centrada arriba, nombre abajo, texto abajo) */
+    .hero-overlay {
+        padding: 25px 0;
+    }
+
+    .tarjeta-presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 88%;
+        padding: 32px 24px;
+        border-radius: 26px;
+        border-left: none;
+        gap: 0;
+    }
+
+    .texto-presentacion,
+    .texto-presentacion h1,
+    .foto-presentacion {
+        display: contents;
+    }
+
+    /* 1º: "Ingeniero en Sistemas" arriba */
+    .texto-presentacion h1 {
+        font-size: 0;
+    }
+
+    .texto-presentacion h1 span {
+        order: 1;
+        display: block;
+        width: 100%;
+        font-size: 27px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--blanco);
+        text-align: left;
+        margin: 0 0 22px 10px;
+    }
+
+    /* 2º: Imagen centrada arriba con barra vertical crema a la izquierda */
+    .foto-presentacion figure {
+        order: 2;
+        width: 215px;
+        height: 255px;
+        border: none;
+        border-radius: 18px;
+        margin: 0 auto 18px;
+        position: relative;
+        overflow: visible;
+    }
+
+    .foto-presentacion figure img {
+        border-radius: 18px;
+    }
+
+    .foto-presentacion figure::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        width: 6px;
+        height: 235px;
+        background-color: var(--crema);
+        border-radius: 4px;
+    }
+
+    /* part4 3*/
+    .foto-presentacion > span {
+        order: 3;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: var(--fuente-titulo);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--blanco);
+        margin: 0 0 18px 0;
+    }
+
+    .foto-presentacion > span::before {
+        content: "Hola,   ";
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--blanco);
+    }
+
+    .btn-drive-hero {
+        display: none !important;
+    }
+
+    /* 4º: Párrafo descriptivo abajo */
+    .texto-presentacion p {
+        order: 4;
+        width: 100%;
+        font-size: 13.5px;
+        line-height: 1.55;
+        text-align: left;
+        margin: 0;
+    }
+
+    /* 3. CONTACTAME */
+    .barra-social {
+        padding: 20px 0 30px;
+    }
+
+    .barra-social h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .caja-redes {
+        max-width: 92%;
+        padding: 12px 15px;
+        border-radius: 16px;
+    }
+
+    .caja-redes a {
+        font-size: 38px;
+    }
+
+    /* 4. SKILLS (2 columnas + GitHub centrado abajo) */
+    .skills-overlay {
+        padding: 35px 0;
+    }
+
+    .titulo-caja-azul {
+        border-bottom: none;
+    }
+
+    .titulo-caja-azul h2 {
+        font-size: 26px;
+    }
+
+    .grid-skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 40px;
+        max-width: 280px;
+    }
+
+    .skill-item {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .skill-item i {
+        font-size: 75px;
+    }
+
+    .grid-skills .skill-item:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: auto;
+        height: auto;
+    }
+
+    /* 5. MIS PROYECTOS (1 columna vertical) */
+    .proyectos {
+        padding: 40px 0 55px;
+    }
+
+    .titulo-seccion.blanco {
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+        max-width: 270px;
+        gap: 35px;
+    }
+
+    .card-proyecto {
+        flex-direction: column;
+        height: auto;
+        border-right: none;
+    }
+
+    .preview-proyecto {
+        width: 100%;
+        height: 230px;
+    }
+
+    .pie-proyecto {
+        padding: 22px 20px;
+    }
+
+    .pie-proyecto h3 {
+        font-size: 16px;
+    }
+
+    .grid-proyectos .card-proyecto:nth-child(3) {
+        max-width: 100%;
+    }
+
+    /* 6. PONTE EN CONTACTO (Oculta las fotos de abajo, deja solo el formulario) */
+    .contacto-overlay {
+        padding: 45px 0 55px;
+    }
+
+    .grid-contacto {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .formulario-contenedor {
+        background-color: transparent;
+        backdrop-filter: none;
+        padding: 0;
+    }
+
+    .formulario-contenedor h2 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .form-erik .fila-doble {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .fotos-contacto {
+        display: none !important;
+    }
+
+    /* 7. SOBRE MÍ (Oculta el h2 y la 2da foto; etiqueta arriba y foto cruzando bloques) */
+    .sobre-mi {
+        padding: 0;
+    }
+
+    .contenedor-sobre-mi {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .bloque-azul-superior {
+        height: 185px;
+        padding: 0;
+        position: relative;
+    }
+
+    .bloque-azul-superior h2 {
+        display: none !important;
+    }
+
+    .bloque-crema-inferior {
+        margin: 0;
+        padding: 0 25px 45px;
+        position: relative;
+    }
+
+    .etiqueta-conoceme {
+        display: inline-block;
+        position: absolute;
+        top: -205px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+        padding: 6px 38px;
+        margin: 0;
+        z-index: 10;
+        white-space: nowrap;
+    }
+
+    .contenido-sobre-mi {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .columna-fotos-sobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-sobre-1 {
+        width: 220px;
+        height: 300px;
+        margin: -145px auto 28px;
+        position: relative;
+        z-index: 5;
+        border-radius: 18px;
+    }
+
+    .foto-sobre-2 {
+        display: none !important;
+    }
+
+    .columna-texto-sobre {
+        padding-top: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .frase-sobre {
+        font-size: 23px;
+        line-height: 1.35;
+        text-align: left;
+        max-width: 240px;
+        margin: 0 auto 32px;
+    }
+
+    .columna-texto-sobre .btn-pill-azul {
+        padding: 12px 45px;
+        font-size: 14px;
+    }
+
+    .banner-frase {
+        padding: 35px 25px 45px;
+        text-align: center;
+    }
+
+    .banner-frase blockquote {
+        max-width: 100%;
+        font-size: 13.5px;
+        text-align: center;
+    }
+
+    /* 8. FORMACIÓN ACADÉMICA (Sin borde lateral, barras azules separadoras) */
+    .formacion {
+        padding: 35px 15px;
+    }
+
+    .marco-formacion {
+        border: none;
+        padding: 0;
+    }
+
+    .titulo-formacion {
+        background-color: var(--azul-medio);
+        border-radius: 0;
+        margin-bottom: 10px;
+        padding: 16px;
+    }
+
+    .titulo-formacion h2 {
+        font-size: 22px;
+        color: var(--texto-oscuro);
+    }
+
+    .titulo-formacion::after {
+        content: "";
+        display: block;
+        height: 10px;
+        background-color: var(--azul-claro);
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+
+    .grid-formacion {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .item-edu {
+        background-color: transparent;
+        border-top: none;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .item-edu img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 12px;
+    }
+
+    .item-edu a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .item-edu::after {
+        content: "";
+        display: block;
+        width: 85%;
+        height: 12px;
+        background-color: var(--azul-oscuro);
+        border-radius: 6px;
+        margin-top: 25px;
+    }
+
+    .item-edu h3,
+    .item-edu p {
+        max-width: 240px;
+        text-align: left;
+    }
+
+    /* 9. EXPERIENCIA LABORAL EN 3 FRANGAS */
+    .exp-zona-superior {
+        padding: 35px 0 0;
+    }
+
+    .titulo-exp {
+        margin-left: 20px;
+        padding: 12px 25px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-exp h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .fila-bostons .foto-exp:last-child {
+        display: none !important;
+    }
+
+    .fila-exp {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 0;
+        padding: 0 20px 45px;
+        border-left: none;
+    }
+
+    .foto-exp {
+        width: 185px;
+        height: 225px;
+    }
+
+    .tarjeta-blanca-exp {
+        width: 100%;
+        max-width: 280px;
+        padding: 24px 22px;
+        text-align: left;
+        border-radius: 0;
+    }
+
+    .fila-apple {
+        background-color: var(--azul-oscuro);
+        border-top: 22px solid var(--blanco);
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .exp-zona-inferior {
+        background-color: #dce4f0;
+        border-top: 22px solid var(--blanco);
+        padding: 35px 0 45px;
+    }
+
+    .circulo-decorativo,
+    .triangulo-decorativo {
+        display: none !important;
+    }
+
+    .contenedor-cv-mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btn-descargar-cv {
+        background-color: var(--crema);
+        color: var(--texto-oscuro);
+        font-family: var(--fuente-titulo);
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 14px 40px;
+        border-radius: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    /* 10. FOOTER MÓVIL */
+    .franja-blanca-footer {
+        height: 18px;
+    }
+
+    .grid-footer {
+        grid-template-columns: 1fr 1.6fr;
+        gap: 15px 10px;
+        text-align: left;
+    }
+
+    .logo-footer img {
+        height: 60px;
+    }
+
+    .contacto-footer {
+        order: 2;
+        gap: 8px;
+    }
+
+    .contacto-footer p {
+        font-size: 11px;
+    }
+
+    .contacto-footer p:first-child {
+        order: 2;
+    }
+
+    .contacto-footer p:last-child {
+        order: 1;
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+        order: 3;
+        text-align: center;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+}

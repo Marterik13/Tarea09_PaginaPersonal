@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Erik Martín | Ingeniero en Sistemas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ipad.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. HEADER / NAVEGACIÓN -->
+    <header class="top-header">
+        <div class="ancho nav-contenedor">
+            <div class="logo">
+                <a href="#">
+                    <img src="imagenesPaginaPersonal/logoEM.png" alt="Logo Erik Martín">
+                </a>
+            </div>
+
+            <!-- Botón Menú Sándwich (visible solo en móvil) -->
+            <button type="button" class="btn-sandwich" id="btn-menu" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="menu-nav">
+                <a href="#proyectos">
+                    <i class="fas fa-folder"></i>
+                    <span>Proyectos</span>
+                    <div class="barra-nav"></div>
+                </a>
+                <a href="#contacto">
+                    <i class="fas fa-address-card"></i>
+                    <span>Contacto</span>
+                    <div class="barra-nav"></div>
+                </a>
+                <a href="#sobre-mi">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Sobre mí</span>
+                    <div class="barra-nav"></div>
+                </a>
+                <a href="#experiencia">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experiencia</span>
+                    <div class="barra-nav"></div>
+                </a>
+            </nav>
+
+            <div class="cta-header">
+                <a href="#contacto" class="btn-iniciar">
+                    <span>Iniciar proyecto</span>
+                    <i class="fas fa-play-circle"></i>
+                </a>
+            </div>
+        </div>
+        <div class="franja-azul-oscura"></div>
+    </header>
+
+    <!-- 2. HERO / PRESENTACIÓN -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="ancho hero-contenedor">
+                <div class="tarjeta-presentacion">
+                    <div class="texto-presentacion">
+                        <h1>Hola, <span>Ingeniero en Sistemas</span></h1>
+                        <p>
+                            “Me apasiona el desarrollo frontend y el diseño web. Disfruto cuidar cada detalle visual, optimizar la interacción del usuario y convertir líneas de código en experiencias digitales intuitivas y atractivas. Mi enfoque combina la creatividad visual con una estructura de código limpia y eficiente. Desde la conceptualización en bocetos y prototipos hasta la implementación técnica, me aseguro de que cada sitio o aplicación no solo sea visualmente impactante, sino también rápido, accesible y adaptable a cualquier dispositivo.”
+                        </p>
+                    </div>
+                    <div class="foto-presentacion">
+                        <figure>
+                            <img src="imagenesPaginaPersonal/erik1.jpg" alt="Erik Martín">
+                        </figure>
+                        <span>Erik Martín</span>
+                        <a href="https://drive.google.com/drive/folders/15Qx-lfFi88F90M6bRYubanrE8AqDc4Zh?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-drive-hero">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Ver CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BARRA SOCIAL ("Contactame") -->
+    <section class="barra-social">
+        <div class="ancho">
+            <h2>Contactame</h2>
+            <div class="caja-redes">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SKILLS -->
+    <section class="skills">
+        <div class="skills-overlay">
+            <div class="ancho skills-contenedor">
+                <div class="titulo-caja-azul">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="grid-skills">
+                    <div class="skill-item"><i class="fab fa-html5"></i></div>
+                    <div class="skill-item"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-item"><i class="fab fa-figma"></i></div>
+                    <div class="skill-item"><i class="fab fa-java"></i></div>
+                    <div class="skill-item"><i class="fab fa-python"></i></div>
+                    <div class="skill-item"><i class="fab fa-github"></i></div>
+                </div>
+
+                <a href="#" class="btn-pill-azul">Ver mas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MIS PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="ancho">
+            <div class="linea-crema"></div>
+            <h2 class="titulo-seccion blanco">Mis proyectos</h2>
+
+            <div class="grid-proyectos">
+                <article class="card-proyecto">
+                    <div class="preview-proyecto"></div>
+                    <div class="pie-proyecto">
+                        <h3>Aura Barber</h3>
+                    </div>
+                </article>
+
+                <article class="card-proyecto">
+                    <div class="preview-proyecto"></div>
+                    <div class="pie-proyecto">
+                        <h3>Medical appointment</h3>
+                    </div>
+                </article>
+
+                <article class="card-proyecto">
+                    <div class="preview-proyecto"></div>
+                    <div class="pie-proyecto">
+                        <h3>Proximamente</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PONTE EN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-overlay">
+            <div class="ancho grid-contacto">
+                <div class="fotos-contacto">
+                    <figure class="img-redondeada">
+                        <img src="imagenesPaginaPersonal/equipo1.jpg" alt="Equipo trabajando">
+                    </figure>
+                    <figure class="img-redondeada">
+                        <img src="imagenesPaginaPersonal/equipo2.jpeg" alt="Presentación de proyecto">
+                    </figure>
+                </div>
+
+                <div class="formulario-contenedor">
+                    <h2>Ponte en contacto</h2>
+                    <form action="#" method="POST" class="form-erik">
+                        <div class="fila-doble">
+                            <div class="campo">
+                                <label for="nombre">Nombre (*Obligatorio)</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label for="apellido">Apellido (s) (*Obligatorio)</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo (*Obligatorio)</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="proyecto">Proyecto (*Obligatorio)</label>
+                            <input type="text" id="proyecto" name="proyecto" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="descripcion">Descripción (*Obligatorio)</label>
+                            <textarea id="descripcion" name="descripcion" rows="2" required></textarea>
+                        </div>
+
+                        <div class="boton-enviar">
+                            <button type="submit" class="btn-pill-azul">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SOBRE MÍ -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="ancho contenedor-sobre-mi">
+            <div class="bloque-azul-superior">
+                <h2>Sobre mí</h2>
+            </div>
+
+            <div class="bloque-crema-inferior">
+                <div class="contenido-sobre-mi">
+                    <div class="columna-fotos-sobre">
+                        <figure class="foto-sobre-1">
+                            <img src="imagenesPaginaPersonal/erikAvion.jpeg" alt="Erik en avión">
+                        </figure>
+                        <figure class="foto-sobre-2">
+                            <img src="imagenesPaginaPersonal/erikfocos.jpeg" alt="Erik luces">
+                        </figure>
+                    </div>
+
+                    <div class="columna-texto-sobre">
+                        <div class="etiqueta-conoceme">Conoceme...</div>
+                        <p class="frase-sobre">
+                            Erik, mis gustos, mis<br>pasatiempos y más sobre mí
+                        </p>
+                        <a href="#" class="btn-pill-azul">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FRASE MOTIVACIONAL -->
+    <section class="banner-frase">
+        <div class="ancho">
+            <blockquote>
+                "TODO EMPIEZA CON UNA IDEA. TAL VEZ QUIERAS COMENZAR UN NEGOCIO. TAL VEZ QUIERAS CONVERTIR UN PASATIEMPO EN ALGO MÁS. O QUIZÁS TENGAS UN PROYECTO CREATIVO PARA COMPARTIR CON EL MUNDO."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- 9. FORMACIÓN ACADÉMICA -->
+    <section class="formacion">
+        <div class="ancho">
+            <div class="marco-formacion">
+                <div class="barra-superior-marco"></div>
+
+                <div class="titulo-formacion">
+                    <h2>Formación academica</h2>
+                </div>
+
+                <div class="grid-formacion">
+                    <div class="item-edu">
+                        <span class="fecha">2022-Actual</span>
+                        <img src="imagenesPaginaPersonal/logo_TEC.svg" alt="Escudo ITM">
+                        <h3>Instituto tecnológico de Mérida</h3>
+                        <p>Ingeniería en Sistemas Computacionales</p>
+                    </div>
+
+                    <div class="item-edu">
+                        <span class="fecha">2022-2019</span>
+                        <img src="imagenesPaginaPersonal/logo_UADY.svg" alt="Escudo UADY">
+                        <h3>Universidad Autonoma de Yucatán</h3>
+                        <p>Preparatoria Dos Uady</p>
+                    </div>
+
+                    <div class="item-edu">
+                        <span class="fecha">English level C1</span>
+                        <a href="https://drive.google.com/drive/u/1/folders/16ZefPGIQWbegR-s-9gpT-fWWLN8o1e4w" target="_blank" rel="noopener noreferrer" class="link-edu">
+                            <div class="badge-ingles">
+                                <i class="fas fa-flag-usa"></i>
+                                <span>C1 C2</span>
+                            </div>
+                        </a>
+                        <a href="https://drive.google.com/drive/u/1/folders/16ZefPGIQWbegR-s-9gpT-fWWLN8o1e4w" target="_blank" rel="noopener noreferrer" class="btn-ver-edu">Ver</a>
+                    </div>
+
+                    <div class="item-edu">
+                        <span class="fecha">Certificados</span>
+                        <a href="https://drive.google.com/drive/u/1/folders/1vqxP6StK0JITjKKi9qiyQnOMSUCjtqEF" target="_blank" rel="noopener noreferrer" class="link-edu">
+                            <div class="icono-certificado">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </a>
+                        <a href="https://drive.google.com/drive/u/1/folders/1vqxP6StK0JITjKKi9qiyQnOMSUCjtqEF" target="_blank" rel="noopener noreferrer" class="btn-ver-edu">Ver</a>
+                    </div>
+                </div>
+
+                <div class="barra-inferior-marco"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. EXPERIENCIA LABORAL -->
+    <section id="experiencia" class="experiencia">
+        <div class="exp-zona-superior">
+            <div class="ancho exp-contenedor">
+                <div class="titulo-exp">
+                    <h2>Experiencia laboral</h2>
+                </div>
+
+                <!-- Tarjeta 1: Boston's Pizza -->
+                <div class="fila-exp fila-bostons">
+                    <figure class="foto-exp">
+                        <img src="imagenesPaginaPersonal/erikbp.jpeg" alt="Boston's Pizza">
+                    </figure>
+                    <div class="tarjeta-blanca-exp">
+                        <h3>Boston's Pizza 2023-2026</h3>
+                        <p>Me desempeñé como mesero durante varios años, ahí aprendí el trato al cliente y la importancia de trabajar en equipo bajo situaciones de estrés.</p>
+                    </div>
+                    <figure class="foto-exp">
+                        <img src="imagenesPaginaPersonal/erikazul.jpeg" alt="Trabajo formal">
+                    </figure>
+                </div>
+
+                <!-- Tarjeta 2: Apple City -->
+                <div class="fila-exp fila-apple">
+                    <div class="tarjeta-blanca-exp">
+                        <h3>Apple city 2021-2023</h3>
+                        <p>Este fue uno de mis primeros trabajos formales en el que inicié siendo vendedor, luego auxiliar de técnico, para llegar a convertirme en gerente de la tienda.</p>
+                    </div>
+                    <figure class="foto-exp">
+                        <img src="imagenesPaginaPersonal/erikgorrablanca.jpg" alt="Apple City">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-zona-inferior">
+            <div class="ancho exp-contenedor-inf">
+                <div class="triangulo-decorativo"></div>
+                <div class="circulo-decorativo"></div>
+
+                <!-- Tarjeta 3: Próximamente -->
+                <div class="fila-exp fila-prox">
+                    <figure class="foto-exp">
+                        <img src="imagenesPaginaPersonal/erikcompu.jpg" alt="Próximamente">
+                    </figure>
+                    <div class="tarjeta-blanca-exp">
+                        <h3>Próximamente</h3>
+                        <p>Quizá tu empresa podría estar aquí</p>
+                    </div>
+                </div>
+
+                <!-- Botón CV exclusivo móvil -->
+                <div class="contenedor-cv-mobile">
+                    <a href="https://drive.google.com/drive/folders/15Qx-lfFi88F90M6bRYubanrE8AqDc4Zh?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-descargar-cv">
+                        DESCARGAR CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer>
+        <div class="franja-blanca-footer"></div>
+        <div class="footer-contenido">
+            <div class="ancho grid-footer">
+                <div class="logo-footer">
+                    <img src="imagenesPaginaPersonal/logoEM.png" alt="Logo Erik Martín">
+                </div>
+
+                <div class="copyright">
+                    <p><i class="far fa-copyright"></i> Erik Martín 2026. Todos los derechos reservados</p>
+                </div>
+
+                <div class="contacto-footer">
+                    <p><i class="fas fa-phone-square-alt"></i> Cel. 9994508564</p>
+                    <p><i class="fas fa-envelope"></i> erik.poot@icloud.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
